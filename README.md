@@ -48,3 +48,9 @@ To lint all `*.ts` files:
 ```bash
 $ npm run lint
 ```
+
+
+## TODO
+
+- CI
+- Deploy on NPM
