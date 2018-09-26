@@ -5,14 +5,13 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
     name: 'qrcode'
 })
 export class QRCodePipe implements PipeTransform {
-    constructor(private sanitizer: DomSanitizer) {
-        console.log(this.sanitizer);
-    }
+    constructor(private sanitizer: DomSanitizer) {}
 
     public transform(value: any, type: string): SafeHtml {
         console.log(type);
         // target => <div [innerHtml]="stringHere | qrcode"></div>
         // Return a Base64 svg
-        return this.sanitizer.bypassSecurityTrustHtml(value);
+        console.log(this.sanitizer.bypassSecurityTrustHtml(value));
+        return value;
     }
 }
