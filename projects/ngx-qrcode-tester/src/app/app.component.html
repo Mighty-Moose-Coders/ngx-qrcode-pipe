@@ -1,0 +1,3 @@
+<input [value]="val" (input)="val = $event.target.value" />
+
+<div [innerHTML]="val | qrcode"></div>

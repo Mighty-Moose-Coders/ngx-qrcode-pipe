@@ -1,56 +1,27 @@
-# ngx-qrcode-pipe
+# NgxQrcodePipe
 
-A simple directive to add qrcode in your app.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-## Installation
+## Development server
 
-To install this library, run:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-```bash
-$ npm install ngx-qrcode-pipe  --save
-```
+## Code scaffolding
 
-## Getting started
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+## Build
 
-import { AppComponent } from './app.component';
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-// Import the library
-import { QRCodeModule } from 'ngx-qrcode-pipe';
+## Running unit tests
 
-@NgModule({
-    declarations: [AppComponent],
-    imports: [
-        BrowserModule,
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-        // Specify QRCodeModule as an import
-        QRCodeModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
-})
-export class AppModule {}
-```
+## Running end-to-end tests
 
-## Contribute
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
+## Further help
 
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
-
-## TODO
-
-- CI
-- Deploy on NPM
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
